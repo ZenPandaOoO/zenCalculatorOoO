@@ -2,15 +2,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 500px;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: gray;
 }
 
 #buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 3px;
-    width: 200px;
+    width: 250px;
+    height: 250px;
 }
 
-.button-number {
+#display {
     display: flex;
+    width: 225px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    justify-content: flex-end;
+
+    align-items: center;
+    background-color: white;
 }
+
+.button-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: verdana;
+    font-weight: 800;
+    font-size: 24px;
+    padding: 20px 28px;
+    width: 58px;
+    height: 58px;
+}
+
