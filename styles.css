@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 100vh;
 }
 
 #calculator {
@@ -21,6 +21,8 @@ body {
     height: 250px;
 }
 
+
+
 #display {
     display: flex;
     width: 225px;
@@ -31,6 +33,29 @@ body {
 
     align-items: center;
     background-color: white;
+}
+
+#clear {
+    font-weight: 800;
+    font-size: 30px;
+    display: flex;
+    background-color: orange;
+    height: 40px;
+    width: 225px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    user-select: none;
+}
+
+#clear:active {
+    background-color: orange;
+    transform: scale(0.95);
+    transition: transform 0.02s;
+}
+
+#clear:hover {
+    background-color: goldenrod;
 }
 
 .button-text {
@@ -45,3 +70,8 @@ body {
     height: 58px;
 }
 
+.button-text:active {
+    background-color: gray;
+    transform: scale(0.95);
+    transition: transform 0.02s;
+}
